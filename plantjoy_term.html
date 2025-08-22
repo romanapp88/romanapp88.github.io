@@ -1,111 +1,251 @@
+<!DOCTYPE html>
 <html lang="en">
-<title>Plantjoy - Terms and Conditions</title>
-</header>
-<main>
-<section>
-<p>These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with Plantjoy mobile application (the "Service") operated by Roman ("us", "we", or "our").</p>
-<p>Please read these Terms and Conditions carefully before using our Plantjoy mobile application (the "Service").</p>
-<p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
-</section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms and Conditions | Plantjoy</title>
+  <meta name="description" content="Terms and Conditions for the Plantjoy mobile application." />
+  <style>
+    :root{
+      --bg:#0b0f14;            /* deep slate */
+      --card:#121923;          /* card background */
+      --muted:#9bb0c2;         /* muted text */
+      --text:#e6edf3;          /* primary text */
+      --brand:#7cd992;         /* soft green */
+      --accent:#93c5fd;        /* link hover */
+      --border:#1f2a37;        /* borders */
+      --warning:#fbbf24;       /* notices */
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background:linear-gradient(180deg, #0b0f14 0%, #0d1117 60%, #0b0f14 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .container{
+      max-width: 980px; margin: 40px auto; padding: 0 20px;
+    }
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; margin-bottom: 24px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text);
+    }
+    .logo{ width:40px; height:40px; border-radius:12px; background: radial-gradient(120% 120% at 20% 10%, #7cd992 0%, #3aa871 40%, #1b6b47 100%); box-shadow: 0 0 0 3px rgba(124,217,146,.15); }
+    h1{ font-size: clamp(28px, 3.2vw, 40px); margin: 0 0 8px; }
+    .subtitle{ color: var(--muted); margin: 0; }
 
+    nav{
+      display:flex; flex-wrap:wrap; gap:10px; margin: 18px 0 28px;
+    }
+    nav a{
+      text-decoration:none; color:var(--text); background:var(--card);
+      border:1px solid var(--border); padding:10px 14px; border-radius:12px;
+      transition: transform .15s ease, border-color .15s ease, background-color .15s ease;
+    }
+    nav a:hover{ transform: translateY(-1px); border-color: var(--brand); }
 
-<section>
-<h2>Subscription Terms</h2>
-<h3>Free trial</h3>
-<p>We may offer a free trial subscription for service. Unless you cancel at least 24 hours before the end of the free trial, you will be automatically charged...</p>
+    .card{
+      background: var(--card); border:1px solid var(--border); border-radius:16px; padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    h2{ font-size: clamp(22px, 2.4vw, 28px); margin-top:34px; }
+    h3{ font-size: clamp(18px, 2.0vw, 22px); margin-top:22px; color: var(--brand); }
+    p, li{ color: var(--text); }
+    .muted{ color: var(--muted); }
+    a{ color: var(--brand); text-underline-offset: 3px; }
+    a:hover{ color: var(--accent); }
 
+    .notice{
+      background: rgba(251,191,36,.09);
+      border:1px dashed rgba(251,191,36,.45);
+      padding: 12px 14px; border-radius: 12px; color: #fde68a; font-size: 0.95rem;
+    }
+    .toc{ margin: 10px 0 0; padding-left: 18px; }
+    .toc li { margin: 6px 0; }
 
-<h3>Subscription</h3>
-<p>The subscription renews automatically at the end of each period...</p>
+    footer{ margin: 40px 0; text-align:center; color: var(--muted); }
+    .small{ font-size: 0.95rem; }
+    .divider{ height:1px; background:var(--border); margin: 24px 0; }
+    .inline-code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background: #0b1220; border:1px solid #0f1b2e; padding:2px 6px; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#top" aria-label="Plantjoy Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1 id="top" style="margin-bottom:6px">Terms and Conditions</h1>
+          <p class="subtitle">Last updated: <time datetime="2025-08-21">August 21, 2025</time></p>
+        </div>
+      </a>
+      <div>
+        <a href="#privacy" title="Jump to Privacy Policy link" class="small">Or read our Privacy Policy</a>
+      </div>
+    </header>
 
+    <nav aria-label="Table of contents" class="card">
+      <strong>On this page</strong>
+      <ol class="toc">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#subscription-terms">Subscription Terms</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#accounts">Accounts</a></li>
+        <li><a href="#copyright-policy">Copyright Policy</a></li>
+        <li><a href="#links">Links to Other Websites</a></li>
+        <li><a href="#termination">Termination</a></li>
+        <li><a href="#liability">Limitation of Liability</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+        <li><a href="#law">Governing Law</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
 
-<h3>Payment method</h3>
-<p>Payment will be charged to the payment method you submitted at the time of purchase...</p>
+    <main class="card">
+      <section id="intro">
+        <p>These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with Plantjoy mobile application (the "Service") operated by Roman ("us", "we", or "our"). Please read these Terms and Conditions carefully before using our Plantjoy mobile application (the "Service").</p>
+        <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service. By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
+      </section>
 
+      <section id="subscription-terms">
+        <h2>SUBSCRIPTION TERMS</h2>
+        <h3>Free trial</h3>
+        <p>We may offer a free trial subscription for service. Unless you cancel at least 24 hours before the end of the free trial, you will be automatically charged a price indicated on the payment screen for a chosen subscription period.</p>
 
-<h3>Cancellation</h3>
-<p>Canceling your subscription only disables automatic renewal...</p>
+        <h3>Subscription</h3>
+        <p>The subscription renews automatically at the end of each period (each week, month, 6 months, year, or otherwise, depending on the option selected by you at the time of purchase) until you cancel.</p>
 
+        <h3>Payment method</h3>
+        <p>Payment will be charged to the payment method you submitted at the time of purchase at confirmation of purchase. You authorize us to charge the applicable subscription fees to the payment method that you submit.</p>
 
-<ul>
-<li><strong>App Store (iOS):</strong> Manage via Apple ID account settings. <a href="#">Apple Support link</a>.</li>
-<li><strong>Google Play (Android):</strong> Manage via Google Play account settings. <a href="#">Google Support link</a>.</li>
-<li><strong>Website/PayPal:</strong> Cancel via your account settings or <a href="#">PayPal link</a>.</li>
-</ul>
-</section>
+        <h3>Cancellation</h3>
+        <p>Canceling your subscription only disables automatic renewal. You will continue to have access to all features until the end of your current billing period.</p>
+        <ul>
+          <li><strong>App Store (iOS):</strong> You can cancel a subscription or free trial anytime through your Apple ID account settings. To avoid charges, cancel at least 24 hours before the end of the trial or current period. Only you can manage your subscriptions. Learn more at <a href="https://support.apple.com/en-us/HT202039" target="_blank" rel="noopener">Apple Support</a>.</li>
+          <li><strong>Google Play (Android):</strong> You can cancel a subscription or free trial anytime in your Google Play account settings. To avoid charges, cancel at least 24 hours before the end of the trial or current period. Only you can manage your subscriptions. Learn more at <a href="https://support.google.com/googleplay/answer/7018481" target="_blank" rel="noopener">Google Support</a>.</li>
+          <li><strong>If purchased on our website:</strong> You can cancel a free trial or a subscription through settings on your website account or in your settings in PayPal at least 24 hours before the end of the free trial or then-current subscription period. Or visit this <a href="https://www.paypal.com/myaccount/autopay/" target="_blank" rel="noopener">PayPal page</a> to manage your recurring payments.</li>
+        </ul>
 
+        <h3>Changes</h3>
+        <p>To the maximum extent permitted by applicable laws, we may change subscription fees at any time. We will give you reasonable notice of any such pricing changes by posting the new prices on the app and/or by sending you an email notification, or in another prominent way. If you do not wish to pay the new fees, you can cancel the applicable subscription prior to the change going into effect.</p>
 
-<section>
-<h2>Content</h2>
-<p>Plantjoy lets you post, upload, store, or share information...</p>
-<h3>Posting & Responsibility</h3>
-<p>You are solely responsible for your Content, including its legality, reliability, and appropriateness.</p>
-<h3>License You Grant Us</h3>
-<p>By posting Content, you grant Plantjoy a worldwide, non-exclusive, royalty-free license...</p>
-</section>
+        <h3>Refunds</h3>
+        <p>All purchases are final and non-refundable, unless required by applicable law. By completing a purchase, you acknowledge and agree that payments are non-refundable and non-exchangeable.</p>
+        <p><em>For EU Residents:</em> If you reside in the European Union, you have the right to withdraw from a service agreement within fourteen (14) days of the purchase date, without charge and without giving any reason—unless you provided consent for the service to begin immediately. By making a purchase, you expressly consent and acknowledge that the performance of the service starts immediately after your payment is validated and the purchase is delivered. As a result, you waive your right of withdrawal once the digital content or service has been fully delivered to you. If you cancel within 14 days of purchase and the service has not been fully delivered, you may be eligible for a proportionate refund based on the extent of service already provided.</p>
+      </section>
 
+      <section id="content">
+        <h2>CONTENT</h2>
+        <h3>Posting &amp; Responsibility</h3>
+        <p>Plantjoy lets you post, upload, store, or share information, photos, videos, text, audio, software, graphics, comments, and other materials (“Content”). You are solely responsible for your Content, including its legality, reliability, and appropriateness.</p>
 
-<section>
-<h2>Accounts</h2>
-<p>When you create an account with us, you must provide accurate, complete, and current information...</p>
-</section>
+        <h3>License You Grant Us</h3>
+        <p>By posting Content, you grant Plantjoy a worldwide, non-exclusive, royalty-free license to host, store, use, reproduce, modify, adapt, publish, translate, create derivative works from, publicly perform/display, and distribute the Content in and through the Service. You retain ownership of your Content.</p>
 
+        <h3>Your Warranties</h3>
+        <p>You represent and warrant that: (a) you own the Content or have sufficient rights to grant the above license; and (b) your Content does not violate any rights (including copyright, trademark, privacy, or publicity) or any law or contract.</p>
 
-<section>
-<h2>Copyright Policy</h2>
-<p>We respect the intellectual property rights of others. It is our policy to respond to any claim...</p>
-</section>
+        <h3>Prohibited Content &amp; Conduct</h3>
+        <p>You will not post Content that is illegal, false or misleading, threatening, harassing, defamatory, obscene, pornographic, hateful, discriminatory, incites violence, involves exploitation of minors, or contains malware/viruses. No spam, unsolicited promotions, commercial solicitation, political campaigning, chain letters, or pyramid schemes. Do not attempt to scrape, hack, or disrupt the Service.</p>
 
+        <h3>iOS UGC Requirements (Moderation, Reporting, Blocking)</h3>
+        <ul>
+          <li><strong>Filtering &amp; Moderation:</strong> We may use automated tools and human review to filter, rank, and moderate Content.</li>
+          <li><strong>Report Abuse:</strong> You and other users can report objectionable Content via the in-app “Report” action or at <a href="mailto:support@email.com">support@email.com</a>.</li>
+          <li><strong>Block Users:</strong> You can block other users; blocked users cannot contact you in-app.</li>
+          <li><strong>Removal:</strong> We may remove or restrict Content (and/or suspend accounts) at any time for violations or risks to safety, without prior notice.</li>
+          <li><strong>Cooperation:</strong> We will review reports promptly and take appropriate action, including escalation to law enforcement where required.</li>
+          <li><strong>Repeat Infringers:</strong> We terminate accounts of users who repeatedly infringe intellectual-property rights.</li>
+          <li><strong>No Endorsement; Neutral Platform:</strong> Plantjoy acts as a neutral platform and does not guarantee the truthfulness, accuracy, or safety of user Content. Use common sense and good judgment when interacting with others.</li>
+          <li><strong>Failure to Comply:</strong> Violations may result in immediate suspension or termination of your account and removal of Content, in addition to any remedies available at law.</li>
+        </ul>
+      </section>
 
-<section>
-<h2>Links to Other Web Sites</h2>
-<p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Roman...</p>
-</section>
+      <section id="accounts">
+        <h2>ACCOUNTS</h2>
+        <p>When you create an account with us, you:</p>
+        <ul>
+          <li>Must provide us information that is accurate, complete, and current at all times.</li>
+          <li>Are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</li>
+          <li>Agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</li>
+          <li>May not use as a username the name of another person or entity or that is not lawfully available for use, a name or trade mark that is subject to any rights of another person or entity other than you without appropriate authorization, or a name that is otherwise offensive, vulgar or obscene.</li>
+          <li>Will not use any robot, spider, crawler, scraper, or other automated means or interface to access the Service, gather or extract data, or collect any personal or other information (such as username and e-mail address) regarding users of our Service.</li>
+          <li>Will not upload viruses or other malicious code or otherwise compromise the security of the Service.</li>
+          <li>Will not attempt to circumvent any content-filtering techniques we employ, or attempt to access areas or features of the Service that you are not authorized to access.</li>
+        </ul>
+        <p>Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p>
+      </section>
 
+      <section id="copyright-policy">
+        <h2>COPYRIGHT POLICY</h2>
+        <p>We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on the Service infringes the copyright or other intellectual property infringement ("Infringement") of any person.</p>
+        <p>If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement that is taking place through the Service, you must submit your notice in writing to the attention of <span class="inline-code">"Copyright Infringement"</span> of <em>mail của store</em> and include in your notice a detailed description of the alleged Infringement.</p>
+        <p class="notice">Note: Replace <em>mail của store</em> with your store's designated email / address for receiving copyright notices.</p>
+        <p>You may be held accountable for damages (including costs and attorneys' fees) for misrepresenting that any Content is infringing your copyright.</p>
+      </section>
 
-<section>
-<h2>Termination</h2>
-<p>We may terminate or suspend your account immediately, without prior notice or liability...</p>
-</section>
+      <section id="links">
+        <h2>LINKS TO OTHER WEB SITES</h2>
+        <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Roman. Roman has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services.</p>
+        <p>You further acknowledge and agree that Roman shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services. We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+      </section>
 
+      <section id="termination">
+        <h2>TERMINATION</h2>
+        <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+      </section>
 
-<section>
-<h2>Limitation of Liability</h2>
-<p>In no event shall Roman, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable...</p>
-</section>
+      <section id="liability">
+        <h2>LIMITATION OF LIABILITY</h2>
+        <p>In no event shall Roman, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p>
+      </section>
 
+      <section id="disclaimer">
+        <h2>DISCLAIMER</h2>
+        <p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance. Roman its subsidiaries, affiliates, and its licensors do not warrant that (a) the Service will function uninterrupted, secure or available at any particular time or location; (b) any errors or defects will be corrected; (c) the Service is free of viruses or other harmful components; or (d) the results of using the Service will meet your requirements.</p>
+      </section>
 
-<section>
-<h2>Disclaimer</h2>
-<p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis...</p>
-</section>
+      <section id="law">
+        <h2>GOVERNING LAW</h2>
+        <p>These Terms shall be governed by the laws of Singapore, without regard to conflict of law principles. Any disputes shall be subject to the exclusive jurisdiction of the courts of Singapore.</p>
+      </section>
 
+      <section id="changes">
+        <h2>CHANGES</h2>
+        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+        <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+      </section>
 
-<section>
-<h2>Governing Law</h2>
-<p>These Terms shall be governed by the laws of Singapore...</p>
-</section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about these Terms, please contact us: <strong>Roman email:romanbra6694@icloud.com </strong>.</p>
+      </section>
 
+      <div class="divider"></div>
 
-<section>
-<h2>Changes</h2>
-<p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time...</p>
-</section>
+      <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>This page references our Privacy Policy. If you intend to host it separately, link it like:
+          <code class="inline-code">&lt;a href="/privacy.html"&gt;Privacy Policy&lt;/a&gt;</code>
+        </p>
+      </section>
 
+      <p class="small muted" style="margin-top:26px"><a href="#top">Back to top ↑</a></p>
+    </main>
 
-<section>
-<h2>Contact Us</h2>
-<p>If you have any questions about these Terms, please contact us:</p>
-<address>
-Roman<br>
-<a href="mailto:romanbra6694@icloud.com">romanbra6694@icloud.com</a>
-</address>
-</section>
-</main>
+    <footer>
+      <p class="small">© <span id="y"></span> Plantjoy. All rights reserved.</p>
+    </footer>
+  </div>
 
-
-<footer>
-<p>&copy; 2025 Plantjoy. All rights reserved.</p>
-</footer>
+  <script>
+    // set footer year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
